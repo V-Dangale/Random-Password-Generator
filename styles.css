@@ -1,0 +1,176 @@
+
+body{
+    color:#ffff;
+    
+      
+}
+.container{
+    background-color: #1F2937;
+    border-radius: 7px;
+    padding: 15px;
+    text-align:start;
+    width:90%;
+    height:350px;
+    
+   
+}
+#wrapper{
+    margin: 0 auto;
+    width:90%;
+    height:400px;
+    display:flex;
+    align-items: start;
+    justify-content: center;
+    
+}
+
+h1{ 
+    font-family: 'Karla', sans-serif;
+    font-family: 'Questrial', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+    margin-bottom:0;
+}
+h5{
+    color:#D5D4D8;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    margin-top:10px;
+    margin-bottom:30px;
+    
+
+}
+.genBtn{
+    background-color:#10B981;
+    border: none;
+    border-radius: 5px;
+    padding: 9px 17px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: -1px 1px 3px #000;
+    color:#FFFFFF; 
+    margin-bottom: 20px;
+}
+
+.line{
+    height: 1px;
+    background-color: #2F3E53;
+    margin: 10px 10px;
+}
+
+span{
+    color: #4ADF86;
+    
+
+}
+
+.psw-elOne, .psw-elTwo {
+    background-color:#273549;
+    width: 150px;
+    color: #55F991;
+    border-radius: 5px;
+    padding: 3px 10px;
+    text-align:center;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+
+@media only screen and (min-width: 768px) {
+    #wrapper{
+        height:30vh;
+
+        
+    }
+
+    .container{
+        padding: 30px;
+        text-align:start;
+        border-radius: 10px;
+        width:80%;
+        height:45vh;
+        
+       
+    }
+
+    h5{
+        font-size: 20px;
+        margin-bottom:40px;
+    }
+    .genBtn{
+       font-size: 20px;
+    }
+
+    .line{
+        margin-bottom: 30px;
+    }
+    
+
+    .psw-elOne, .psw-elTwo {
+        display: inline;
+        margin-right:50px;
+        font-size: 20px;
+       
+        
+    }
+    
+}
+
+@media only screen and (min-width: 1024px) {
+    #wrapper{
+        width:60%;
+        height:30vh;
+    }
+ 
+    .container{
+        height:50vh;  
+      
+    }
+        .psw-elOne, .psw-elTwo {
+        display: inline;
+        margin-right:40px;
+        font-size: 20px;
+       
+        
+    }
+    
+    
+   
+    
+}
+
+@media only screen and (min-width: 1440px) {
+    #wrapper{
+        width:60%;
+        height:80vh;
+    }
+
+    .container{
+        width:70%;
+        height:60vh;
+    }
+
+    h1{ 
+        font-size:50px;
+    }
+    h5{
+        font-size: 25px;
+    }
+    .genBtn{
+        font-size: 30px;
+    }
+
+    .psw-elOne, .psw-elTwo {
+        font-size: 25px;
+        margin-right: 65px; 
+        width: 200px;
+    }
+    
+}
+
+
