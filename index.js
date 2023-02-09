@@ -15,16 +15,16 @@ const characters =["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","
                     "~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?",
                     "/"
                 ];
-                
+
 
 //function that generates random passwords             
 genBtn.addEventListener( "click", function(){
-
+    
     //declaring an empty string wherein the password will be displayed//
     pswElOne.textContent = ""
     pswElTwo.textContent = ""
-
-    for ( i = 0; i < 15; i++){ 
+    
+    for ( i = 0; i <15; i++){ 
 
     //these will fetch 15 random characters from the characters array
     let randomPswOne = Math.floor( Math.random() * characters.length)
@@ -34,8 +34,8 @@ genBtn.addEventListener( "click", function(){
     pswElOne.textContent += characters[randomPswOne]
     pswElTwo.textContent += characters[randomPswTwo]
             
-    }
+    } 
     
- 
+    
 })
-             
+       

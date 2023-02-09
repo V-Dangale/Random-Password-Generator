@@ -52,6 +52,12 @@ h5{
     color:#FFFFFF; 
     margin-bottom: 20px;
 }
+.genBtn:hover{
+    transform: scale(1.05);
+    transition: 0.5s ease;
+    border: 3px solid snow;
+
+}
 
 .line{
     height: 1px;
@@ -167,9 +173,9 @@ span{
 
     .psw-elOne, .psw-elTwo {
         font-size: 25px;
-        margin-right: 65px; 
+        margin-right: 50px; 
         width: 200px;
-    }
+       }
     
 }
 
