@@ -1,10 +1,10 @@
 
 //element wherin the password will appear
-let pswElOne = document.querySelector(".psw-elOne")
-let pswElTwo = document.querySelector(".psw-elTwo")
+const pswElOne = document.querySelector(".psw-elOne")
+const pswElTwo = document.querySelector(".psw-elTwo")
 
 //button element
-let genBtn = document.querySelector(".genBtn")
+const genBtn = document.querySelector(".genBtn")
 
 
 
@@ -24,11 +24,11 @@ genBtn.addEventListener( "click", function(){
     pswElOne.textContent = ""
     pswElTwo.textContent = ""
     
-    for ( i = 0; i <15; i++){ 
+    for ( i = 0; i <pswLength; i++){ 
 
     //these will fetch 15 random characters from the characters array
-    let randomPswOne = Math.floor( Math.random() * characters.length)
-    let randomPswTwo = Math.floor( Math.random() * characters.length) 
+    const randomPswOne = Math.floor( Math.random() * characters.length)
+    const randomPswTwo = Math.floor( Math.random() * characters.length) 
 
     //displaying the 15 characters in the empty string
     pswElOne.textContent += characters[randomPswOne]
