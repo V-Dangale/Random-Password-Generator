@@ -24,7 +24,7 @@ genBtn.addEventListener( "click", function(){
     pswElOne.textContent = ""
     pswElTwo.textContent = ""
     
-    for ( i = 0; i <pswLength; i++){ 
+    for ( i = 0; i < 15; i++){ 
 
     //these will fetch 15 random characters from the characters array
     const randomPswOne = Math.floor( Math.random() * characters.length)
