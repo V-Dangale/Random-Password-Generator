@@ -3,6 +3,11 @@
 const pswElOne = document.querySelector(".psw-elOne")
 const pswElTwo = document.querySelector(".psw-elTwo")
 
+const input = document.querySelector(".input")
+
+const errorMessageEl = document.querySelector(".errorMessage") 
+
+
 //button element
 const genBtn = document.querySelector(".genBtn")
 
@@ -17,25 +22,58 @@ const characters =["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","
                 ];
 
 
-//function that generates random passwords             
-genBtn.addEventListener( "click", function(){
-    
-    //declaring an empty string wherein the password will be displayed//
+let length = input.value
+
+console.log(length)
+//Giving the textContent an empty value
+//And resetting the textConten to empty when reset() is called
+
+function reset(){
     pswElOne.textContent = ""
     pswElTwo.textContent = ""
-    
-    for ( i = 0; i < 15; i++){ 
+}
 
-    //these will fetch 15 random characters from the characters array
-    const randomPswOne = Math.floor( Math.random() * characters.length)
-    const randomPswTwo = Math.floor( Math.random() * characters.length) 
 
-    //displaying the 15 characters in the empty string
-    pswElOne.textContent += characters[randomPswOne]
-    pswElTwo.textContent += characters[randomPswTwo]
-            
-    } 
+//Function that loops through the characters array and displays the characters
+function loop(){
+    
+    for ( i = 0; i < input.value; i++){ 
+
+        //these will fetch (desired length) random characters from the characters array
+        const randomPswOne = Math.floor( Math.random() * characters.length)
+        const randomPswTwo = Math.floor( Math.random() * characters.length) 
+    
+        //displaying the random password in the empty string
+        pswElOne.textContent += characters[randomPswOne]
+        pswElTwo.textContent += characters[randomPswTwo]
+                
+        }
+}
+
+
+//function that displays the error message when called
+function errorMessage(){
+    errorMessageEl.textContent = "Please consider entering a valid length"
+}
+
+
+//Function that calls reset() and loop() functions when the appropriate conditions are met             
+genBtn.addEventListener( "click", function(){
+    
+    if( input.value >= 8 && input.value <= 16){
+        reset()
+        loop()
+
+    }else{
+        reset()
+        errorMessage()
+    }
+  
+    
+  
     
     
+
 })
+
        
