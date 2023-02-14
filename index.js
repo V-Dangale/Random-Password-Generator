@@ -68,12 +68,8 @@ genBtn.addEventListener( "click", function(){
         reset()
         errorMessage()
     }
-  
     
-  
-    
-    
-
 })
+
 
        
