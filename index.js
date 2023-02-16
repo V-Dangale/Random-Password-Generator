@@ -1,9 +1,8 @@
 
 //element wherin the password will appear
 const pswEl = document.querySelector(".psw-el")
-console.log(pswEl)
 
-
+//User input
 const input = document.querySelector(".input")
 
 const errorMessageEl = document.querySelector(".errorMessage") 
@@ -30,6 +29,7 @@ let length = input.value
 
 function reset(){
     pswEl.textContent = ""
+    errorMessageEl.textContent = ""
 }
 
 
