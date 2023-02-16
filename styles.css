@@ -116,7 +116,7 @@ span{
 
 }
 
-.psw-elOne, .psw-elTwo {
+.psw-el{
     background-color:#273549;
     width: 200px;
     height: 30px;
@@ -187,13 +187,7 @@ span{
         height: 60px;
         margin-top: -25px
     }
-
-    .psw-elOne, .psw-elTwo {
-        margin: 10px 20px 0 0;
-    }
-
-
-    
+  
 }
 
 @media only screen and (min-width: 1024px) {
@@ -206,17 +200,12 @@ span{
         height:50vh;  
       
     }
-        .psw-elOne, .psw-elTwo {
-        display: inline;
-        margin-right:40px;
+    .psw-el{
         font-size: 20px;
        
         
     }
-    
-    
-   
-    
+      
 }
 
 @media only screen and (min-width: 1440px) {
@@ -240,10 +229,8 @@ span{
         font-size: 30px;
     }
 
-    .psw-elOne, .psw-elTwo {
+    .psw-el{
         font-size: 25px;
-        margin-right: 50px; 
-        width: 200px;
        }
     
 }

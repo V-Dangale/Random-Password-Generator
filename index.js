@@ -1,7 +1,8 @@
 
 //element wherin the password will appear
-const pswElOne = document.querySelector(".psw-elOne")
-const pswElTwo = document.querySelector(".psw-elTwo")
+const pswEl = document.querySelector(".psw-el")
+console.log(pswEl)
+
 
 const input = document.querySelector(".input")
 
@@ -24,28 +25,19 @@ const characters =["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","
 
 let length = input.value
 
-console.log(length)
 //Giving the textContent an empty value
-//And resetting the textConten to empty when reset() is called
+//And resetting the textContent to empty when reset() is called
 
 function reset(){
-    pswElOne.textContent = ""
-    pswElTwo.textContent = ""
+    pswEl.textContent = ""
 }
 
 
-//Function that loops through the characters array and displays the characters
+//Function that loops through the characters array and ranomly displays the items
 function loop(){
     
     for ( i = 0; i < input.value; i++){ 
-
-        //these will fetch (desired length) random characters from the characters array
-        const randomPswOne = Math.floor( Math.random() * characters.length)
-        const randomPswTwo = Math.floor( Math.random() * characters.length) 
-    
-        //displaying the random password in the empty string
-        pswElOne.textContent += characters[randomPswOne]
-        pswElTwo.textContent += characters[randomPswTwo]
+        pswEl.textContent += characters[ Math.floor( Math.random() * characters.length) ]
                 
         }
 }
